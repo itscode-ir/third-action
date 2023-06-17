@@ -52,6 +52,8 @@ jobs:
           #package.json
   deploy:
     environment: shahabland
+    env:
+      SHAHAB_NAME: $SHAHAB_NAME
     needs: build
     runs-on: ubuntu-latest
     steps:
