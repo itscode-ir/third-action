@@ -53,7 +53,7 @@ jobs:
   deploy:
     environment: shahabland
     env:
-      SHAHAB_NAME: $SHAHAB_NAME
+      SHAHAB_NAME: ${{secrets.SHAHAB_NAME}}
     needs: build
     runs-on: ubuntu-latest
     steps:
