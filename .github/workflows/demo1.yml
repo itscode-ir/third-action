@@ -51,6 +51,7 @@ jobs:
             dist
           #package.json
   deploy:
+    environment: shahabland
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -66,3 +67,4 @@ jobs:
         run: |
           echo "UserName: $USER_NAME"
           echo "password: $MONGODB_PASSWORD"
+          echo "ShahabDj: $SHAHAB_NAME"
